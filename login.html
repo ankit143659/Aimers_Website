@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login\SignUp</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body>
+    <h2 class="h2">
+        Login\SignUp
+    </h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="login.php" method="post">
+                <h1>
+                    Create Account
+                </h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="social"><i class="ri-google-fill"></i></a>
+                    <a href="#" class="social"><i class="ri-linkedin-fill"></i></a>
+                </div>
+                <span>Or use your email for registration</span>
+                <input type="text" placeholder="Name" id="name1" name="name">
+                <input type="email" placeholder="Email" id="email" name="email">
+                <input type="password" placeholder="Password" id="password" name="password"  maxlength="8" minlength="8">
+                <button id="registration" type="submit">REGISTER</button>
+            </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form>
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social"><i class="ri-google-fill"></i></a>
+                        <a href="#" class="social"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                    <span>Or use your account</span>
+                    <input type="email" placeholder="Email" id="login_email" >
+                    <input type="password" placeholder="Password" id="login_password">
+                    <input type="text" id="otpValue" placeholder="enter otp" class="hide">
+                    <a id="otp" href="">Generate otp</a>
+                   <button id="login" type="submit"><a id="loginlink" target="_self"></a>LOGIN</a></button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back !</h1>
+                        <p>To keep Connected With us please login with your 
+                            personal info</p>
+                        <button class="ghost" id="signin">LOGIN</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello friends</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost signUp" id="signup">REGISTRATION</button>
+                    </div>
+            </div>
+                </div>           
+    </div>
+    <script src="login.js"></script>
+    <script>
+        alert("FOR BETTER EXPERIENCE USE LAPTOP OR DESKTOP SITE");
+    </script>
+    <script src="practice.js"></script>
+</body>
+</html>
